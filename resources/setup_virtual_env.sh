@@ -43,7 +43,7 @@ install_requirement_txt(){
 print_message "installing requirements"
 pip install -r ./resources/requirements.txt
 # pip install -r ./requirements.txt
-sleep 20
+sleep 60
 }
 
 switch_to_virtual_env(){
@@ -56,13 +56,14 @@ check_and_install_virtualenv
 create_or_switch_to_virtual_environment
 # adding aut file name manually as searching through * is behaving some times, 
 # only challenge is we'll have to manually upgrade build no. in aut name on every release
-AUT="$APK_PATH/*.apk"
+# AUT="$APK_PATH/*.apk"
 # # AUT="$APK_PATH/edx-debuggable-2.20.2.apk"
-print_message "aut value $AUT"
-Test_Package="$TEST_PROJECT_REPO_NAME/test_bundle.zip"
-CONFIG="edx.yml"
-print_message "test package value $Test_Package"
-print_message "setup AWS"
-python ./resources/setup_aws.py
+# print_message "aut value $AUT"
+# Test_Package="$TEST_PROJECT_REPO_NAME/test_bundle.zip"
+# CONFIG="edx.yml"
+# print_message "test package value $Test_Package"
+# print_message "setup AWS"
+# python ./resources/setup_aws.py
 print_message "calling AWS Test run"
-python ./resources/trigger_aws_test_run.py $AUT $Test_Package $CONFIG
+# python ./resources/trigger_aws_test_run.py $AUT $Test_Package $CONFIG
+python ./resources/trigger_aws_test_run.py
