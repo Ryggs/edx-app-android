@@ -78,7 +78,7 @@ def create_project(project_name):
         return new_project['project']['arn']
     else:
         print('Problem creating {} project'.format(project_name))
-        sys.exit()
+        # sys.exit()
 
 
 def setup_device_pool(project_arn, device_pool_name):
@@ -167,7 +167,7 @@ def create_device_pool(pool_name, project_arn):
         return new_pool_arn
     else:
         print('Problem creating {} device pool'.format(project_name))
-        sys.exit()
+        # sys.exit()
 
 
 def get_device_info(target_project_arn):
