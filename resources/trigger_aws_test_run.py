@@ -11,7 +11,7 @@ import boto3
 import requests
 import time
 import setup_aws
-import glob 
+# import glob 
 
 REGION = 'us-west-2'
 PROJECT_NAME = 'edx-app-test_two'
@@ -31,8 +31,8 @@ APK_PATH = '../OpenEdXMobile/build/outputs/apk/prod/debuggable/'
 AUT_NAME = APK_PATH + 'edx-debuggable-2.20.2.apk'	
 PACKAGE_NAME = TEST_PROJECT_REPO_NAME + '/test_bundle.zip'
 
-aut = glob.glob(AUT_NAME)
-print("----- "+aut)
+# aut = glob.glob(AUT_NAME)
+# print("----- "+aut)
 
 print('Application Under Test - {}, Test Package - {} - configs {}'.format(
         AUT_NAME,

@@ -42,7 +42,6 @@ virtualenv -p /usr/bin/python3.6 ./virtual_env
 install_requirement_txt(){
 print_message "installing requirements"
 pip install -r ./resources/requirements.txt
-# pip install -r ./requirements.txt
 sleep 60
 }
 
