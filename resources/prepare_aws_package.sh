@@ -10,3 +10,4 @@ sleep 60
 
 # zip pacakge aws device farm 
 zip -r test_bundle.zip edx-app-test/tests/ wheelhouse/ edx-app-test/requirements.txt
+sleep 30
